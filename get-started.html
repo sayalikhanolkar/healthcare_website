@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - Health & Care</title>
+  <link rel="stylesheet" href="styles/get-started.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar">
+    <h1 id="name">Health & Care</h1>
+    <div id="pages">
+      <a href="index.html" class="page">Home</a>
+      <a href="diet.html" class="page">Diet</a>
+      <a href="fitness.html" class="page">Fitness</a>
+      <a href="homepage-support.html" class="page">Reach Out</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to Your Wellness Journey</h2>
+    <p>Ready to take the first step toward a healthier you? Fill out the form below to get started on your personalized health and fitness plan.</p>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="registration">
+    <h2>Sign Up Now</h2>
+    <form action="submit-form.html" method="POST">
+      <div class="form-item">
+        <label for="name" class="hellolabels">Full Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div><br>
+
+      <div class="form-item">
+        <label for="email" class="hellolabels">Email Address</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div><br>
+
+      <div class="form-item">
+        <label for="age" class="hellolabels">Age</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+      </div><br>
+
+      <div class="form-item">
+        <label for="goal" class="hellolabels">Wellness Goal</label>
+        <select id="goal" name="goal">
+          <option value="fitness">Fitness</option>
+          <option value="diet">Diet</option>
+          <option value="mental-health">Mental Health</option>
+        </select>
+      </div><br>
+
+      <button type="submit" class="btn" id="abcd"><a href="get-started.html">Submit</a></button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Health & Care. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/get-started.js"></script>
+</body>
+</html>

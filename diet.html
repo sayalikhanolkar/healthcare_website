@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="diet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <h1 id="namehidden">nameofwebsite</h1>
+        <h1 id="name">Health & Care</h1>
+        <br>
+        <div id="pages">
+          <a href="index.html" class="page">Home</a> 
+          <a href="diet.html" class="page">Diet</a>
+          <a href="fitness.html" class="page">Fitness</a> 
+          <a href="homepage-support.html" class="page">Reach out</a>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div id="bmicalc">
+        <br>
+        <h2 id="knowurbmi">BMI Calculator</h2>
+        <label for="weight" class="bmi">Enter your weight in kgs:</label><br><br>
+        <input type="number" id="weight" placeholder="Weight in kg" required><br><br>
+        <label for="height" class="bmi">Enter your height in meters:</label><br><br>
+        <input type="number" id="height" placeholder="Height in meters" step="0.01" required><br><br>
+        <label class="bmi">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male" class="bmi">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" class="bmi">Female</label><br><br>
+        <label for="age" class="bmi">Enter your age:</label><br><br>
+        <input type="number" id="age" placeholder="Age" required><br><br>
+
+
+
+        <button id="submitbutton">Submit</button><br><br>
+        <p id="result"></p> <!-- This will display the BMI result -->
+        <br>
+    </div>
+
+    <div id="intro">
+        <p id="intropara">To maintain your weight, you need to eat the same number of calories as you burn in a day. If you want to lose weight, eat about 500 to 750 calories less than your daily need. This helps you lose around 0.5 to 1 kg per week. Eating healthy foods like proteins, fruits, and vegetables, along with exercise, makes it easier. To gain weight, eat 300 to 500 more calories than your daily need. Focus on foods like nuts, whole grains, and lean proteins, and do strength training to build muscle, not just gain fat.</p>
+        <img src="assets/images/diet.jpg" alt="" id="introimage">
+    </div>
+
+    <p id="dietplans">Diet plans:</p>
+
+    <div class="diet-wrapper">
+        <h1 class="section-heading">Weight Gain</h1>
+        <div class="diet-box">
+            <h2>Veg Weight Gain</h2>
+            <h3>Breakfast</h3>
+            <ul>
+                <li>Option 1: Oats with peanut butter</li>
+                <li>Option 2: Smoothie with nuts</li>
+                <li>Option 3: Veggie sandwich with hummus</li>
+            </ul>
+            <h3>Lunch</h3>
+            <ul>
+                <li>Option 1: Brown rice and paneer curry</li>
+                <li>Option 2: Veg paratha with curd</li>
+                <li>Option 3: Dal with quinoa and salad</li>
+            </ul>
+            <h3>Dinner</h3>
+            <ul>
+                <li>Option 1: Vegetable pulao with curd</li>
+                <li>Option 2: Grilled paneer with sautéed vegetables</li>
+                <li>Option 3: Spinach soup with multigrain bread</li>
+            </ul>
+        </div>
+    
+        <div class="box">
+            <h2>Non-Veg Weight Gain</h2>
+            <h3>Breakfast</h3>
+            <ul>
+                <li>Option 1: Omelette with whole wheat bread</li>
+                <li>Option 2: Grilled chicken sandwich</li>
+                <li>Option 3: Boiled eggs and avocado toast</li>
+            </ul>
+            <h3>Lunch</h3>
+            <ul>
+                <li>Option 1: Grilled chicken with quinoa</li>
+                <li>Option 2: Chicken curry with brown rice</li>
+                <li>Option 3: Fish fillet with steamed veggies</li>
+            </ul>
+            <h3>Dinner</h3>
+            <ul>
+                <li>Option 1: Baked fish with vegetables</li>
+                <li>Option 2: Chicken soup with brown bread</li>
+                <li>Option 3: Turkey stir fry with quinoa</li>
+            </ul>
+        </div>
+    
+        <h1 class="section-heading">Weight Loss</h1>
+        <div class="box">
+            <h2>Veg Weight Loss</h2>
+            <h3>Breakfast</h3>
+            <ul>
+                <li>Option 1: Smoothie bowl with chia seeds</li>
+                <li>Option 2: Vegetable oats</li>
+                <li>Option 3: Sprout salad</li>
+            </ul>
+            <h3>Lunch</h3>
+            <ul>
+                <li>Option 1: Quinoa salad</li>
+                <li>Option 2: Stir-fried veggies with tofu</li>
+                <li>Option 3: Grilled veggies with lentils</li>
+            </ul>
+            <h3>Dinner</h3>
+            <ul>
+                <li>Option 1: Vegetable soup with whole grain bread</li>
+                <li>Option 2: Stir-fried tofu with greens</li>
+                <li>Option 3: Mixed bean salad</li>
+            </ul>
+        </div>
+    
+        <div class="box">
+            <h2>Non-Veg Weight Loss</h2>
+            <h3>Breakfast</h3>
+            <ul>
+                <li>Option 1: Scrambled eggs with avocado</li>
+                <li>Option 2: Chicken and veggie wrap</li>
+                <li>Option 3: Boiled eggs with spinach</li>
+            </ul>
+            <h3>Lunch</h3>
+            <ul>
+                <li>Option 1: Grilled chicken salad</li>
+                <li>Option 2: Turkey lettuce wraps</li>
+                <li>Option 3: Grilled fish with green beans</li>
+            </ul>
+            <h3>Dinner</h3>
+            <ul>
+                <li>Option 1: Baked chicken with steamed vegetables</li>
+                <li>Option 2: Grilled fish with broccoli</li>
+                <li>Option 3: Turkey soup with quinoa</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts/diets.js"></script>
+
+
+    
+    
+</body>
+</html>

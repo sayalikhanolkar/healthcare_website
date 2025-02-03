@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage Support</title>
+  <link rel="stylesheet" href="styles/homepage-support.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar">
+    <h1 id="name">Health & Care</h1>
+    <div id="pages">
+      <a href="index.html" class="page">Home</a>
+      <a href="diet.html" class="page">Diet</a>
+      <a href="fitness.html" class="page">Fitness</a>
+      <a href="homepage-support.html" class="page">Reach Out</a>
+    </div>
+  </div>
+<!-- Secondary Navbar -->
+<nav id="secondary-navbar">
+  <a href="#qa" class="nav-link">Q&A</a>
+  <a href="#reminders" class="nav-link">Daily Reminders</a>
+  <a href="#articles" class="nav-link">Explore Articles</a>
+</nav>
+<!-- Q&A Section -->
+<section id="qa" class="container">
+  <h2>Ask a Question</h2>
+  <form id="question-form">
+    <textarea id="question-input" placeholder="Type your question here..." required></textarea>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+  <div id="faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item">
+      <details>
+        <summary>How often should I exercise?</summary>
+        <p>It is recommended to exercise at least 3-5 times a week for optimal health. Incorporate a mix of cardio, strength training, and flexibility exercises.</p>
+      </details>
+    </div>
+    <div class="faq-item">
+      <details>
+        <summary>What’s the best time to meditate?</summary>
+        <p>Meditation can be done at any time, but many find it beneficial in the morning to start the day with clarity or before bed to relax and unwind.</p>
+      </details>
+    </div>
+    <div class="faq-item">
+      <details>
+        <summary>How much water should I drink daily?</summary>
+        <p>It is generally recommended to drink 8 glasses (about 2 liters) of water a day. However, individual needs may vary based on activity level and climate.</p>
+      </details>
+    </div>
+    <div class="faq-item">
+      <details>
+        <summary>What are the benefits of a balanced diet?</summary>
+        <p>A balanced diet provides essential nutrients, improves energy levels, supports immune function, and reduces the risk of chronic diseases.</p>
+      </details>
+    </div>
+    <div class="faq-item">
+      <details>
+        <summary>How can I improve my sleep quality?</summary>
+        <p>To improve sleep quality, maintain a consistent sleep schedule, create a relaxing bedtime routine, and avoid screens before bed.</p>
+      </details>
+    </div>
+    <div class="faq-item">
+      <details>
+        <summary>What are some tips for stress management?</summary>
+        <p>Practice mindfulness, exercise regularly, maintain a healthy diet, and ensure you get enough sleep. Talking to a friend or professional can also help.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+ <!-- Daily Reminders -->
+<section id="reminders" class="container">
+  <h2>Daily Reminders</h2>
+  <div id="reminder-list">
+    <div class="reminder">
+      <input type="checkbox" id="reminder1">
+      <label for="reminder1">Do your morning workout</label>
+    </div>
+    <div class="reminder">
+      <input type="checkbox" id="reminder2">
+      <label for="reminder2">Drink 8 glasses of water</label>
+    </div>
+    <div class="reminder">
+      <input type="checkbox" id="reminder3">
+      <label for="reminder3">Take a 10-minute walk</label>
+    </div>
+    <div class="reminder">
+      <input type="checkbox" id="reminder4">
+      <label for="reminder4">Practice mindfulness for 5 minutes</label>
+    </div>
+    <div class="reminder">
+      <input type="checkbox" id="reminder5">
+      <label for="reminder5">Eat a healthy breakfast</label>
+    </div>
+    <div class="reminder">
+      <input type="checkbox" id="reminder6">
+      <label for="reminder6">Get 7-8 hours of sleep</label>
+    </div>
+  </div>
+  <button id="add-reminder" class="btn">Add Reminder</button>
+</section>
+  <!-- Small Articles -->
+<section id="articles" class="container">
+  <h2>Health Articles</h2>
+  <div class="article-grid">
+    <a href=" https://www.hearinglife.com/why-hearing-health-matters/" class="article-link">
+      <div class="article">
+        <img src="assets/images/hearing-health.jpg" alt="Hearing Health">
+        <h3>Why Hearing Health Matters</h3>
+        <p>Hearing health is crucial for communication and overall well-being. Learn how to protect your ears.</p>
+      </div>
+    </a>
+    <a href=" https://www.cdc.gov/ncbddd/stroke/facts.html" class="article-link">
+      <div class="article">
+        <img src="assets/images/cardio-fitness.jpg" alt="Cardio Fitness">
+        <h3>What It Means If Your Cardio Fitness Is Low</h3>
+        <p>Low cardio fitness can impact your energy levels and long-term health. Find out how to improve it.</p>
+      </div>
+    </a>
+    <a href=" https://www.cdc.gov/medicationsafety/index.html" class="article-link">
+      <div class="article">
+        <img src="assets/images/tracking-meds.jpg" alt="Tracking Meds">
+        <h3>Tracking Meds</h3>
+        <p>Keeping track of your medications is essential for managing chronic conditions. Learn tips for staying organized.</p>
+      </div>
+    </a>
+    <a href=" https://www.cdc.gov/handwashing/why-handwashing.html" class="article-link">
+      <div class="article">
+        <img src="assets/images/handwashing.jpg" alt="Handwashing">
+        <h3>Handwashing</h3>
+        <p>Proper handwashing is one of the most effective ways to prevent the spread of germs. Follow these steps.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Health & Care. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/homepage-support.js"></script>
+</body>
+</html>

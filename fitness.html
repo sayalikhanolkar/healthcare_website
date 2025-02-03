@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fitness.css">
+    <title>Yoga</title>
+</head>
+<body>
+    <div id="navbar">
+        <h1 id="namehidden" color="#0d6e81"></h1>
+        <h1 id="name">Health & Care</h1>
+        <br>
+        <div id="pages">
+          <a href="index.html" class="page">Home</a> 
+          <a href="diet.html" class="page">Diet</a>
+          <a href="fitness.html" class="page">Fitness</a> 
+          <a href="homepage-support.html" class="page">Reach out</a>
+        </div>
+    </div>
+
+    <header class="logo">
+        <nav>
+            <ul>
+                <li><a href="#yoga">Yoga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure>
+        <img src="assets/images/yoga2.jpg" alt="Yoga Practice" style="height:400px; width:800px">
+        <figcaption>Practice Yoga for a Healthy Life</figcaption>
+    </figure>
+
+    <section>
+        <h2>Enter Your Details</h2>
+        <form onsubmit="event.preventDefault(); recommendWorkout();">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="purpose">Purpose:</label>
+            <select id="purpose" name="purpose">
+                <option value="flexibility">Flexibility</option>
+                <option value="strength">Strength</option>
+                <option value="stress">Stress Relief</option>
+            </select>
+
+            <button type="submit">Get Yoga Plan</button>
+            <p id="result"></p>
+        </form>
+    </section>
+    
+    <section id="articles" class="container">
+        <h2>Health Articles</h2>
+        <div class="article-grid">
+            <div class="article">
+                <img src="assets/images/yoga.jpg" alt="yoga" width="50" height="50">
+                <h3>Need to do yoga</h3>
+                <p>Yoga is an essential practice for maintaining physical and mental well-being. It combines gentle movements, breathing exercises, and mindfulness to improve flexibility, strength, and balance. Regular yoga practice helps reduce stress, anxiety, and promotes mental clarity. It also aids in improving posture, enhancing circulation, and boosting the immune system. Whether you're looking to enhance your fitness level, improve your mental focus, or simply relax, yoga offers a holistic approach to health. With its variety of styles, yoga can be tailored to suit anyone's lifestyle, making it an invaluable addition to your daily routine.</p>
+            </div>
+            <div class="article">
+                <img src="assets/images/cardio.jpg" alt="Cardio Fitness" width="50" height="50">
+                <h3>Origin of Yoga</h3>
+                <p>Yoga originated in ancient India over 5,000 years ago as a spiritual practice. The word "yoga" comes from the Sanskrit "yuj," meaning to unite. It was first mentioned in the Rigveda and later systematized by Patanjali in the Yoga Sutras. Originally focused on spiritual development, it evolved to include physical postures and breathing techniques. Yoga gained global popularity in the 20th century, blending physical, mental, and spiritual practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/fitness.js"></script>
+</body>
+</html>

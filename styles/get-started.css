@@ -1,0 +1,346 @@
+/* Root Variables */
+#abcd
+{
+    color: white;
+}
+
+:root {
+    --clr-dark: #0a3b4e;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-teal: #0d6e81;
+    --clr-teal-light: #73c2c9;
+    --clr-teal-dark: #085c63;
+    --clr-indigo: #4f46e5;
+  
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+/* General Styles */
+body {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Center-align all text */
+}
+
+/* Navbar */
+#navbar {
+    text-align: center;
+    background-color: var(--clr-teal);
+    height: 200px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#pages {
+    display: flex;
+    gap: var(--size-lg);
+    margin-top: var(--size-sm);
+}
+
+.page {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.page:hover {
+    color: rgb(184, 180, 180);
+}
+
+/* Container Layout */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* Small Articles */
+#articles {
+    padding: var(--size-lg);
+    background-color: var(--clr-slate800);
+    margin: var(--size-lg);
+    border-radius: var(--size-xs);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: var(--size-lg); /* Space between articles */
+}
+
+.article {
+    border: 1px solid var(--clr-slate600);
+    border-radius: var(--size-xs);
+    overflow: hidden;
+    background-color: var(--clr-slate600);
+    width: 100%; /* Full width of the grid cell */
+}
+
+.article img {
+    width: 100%; /* Full width of the article container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 25px; /* Rounded corners at the top */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0; /* Remove margin to reduce gap */
+}
+
+.article:hover img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+.article h3 {
+    margin: var(--size-sm);
+    font-size: var(--size-lg);
+    color: var(--clr-light);
+}
+
+.article p {
+    margin: var(--size-sm);
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: var(--size-sm);
+    background-color: var(--clr-teal);
+    color: var(--clr-light);
+    margin-top: var(--size-lg);
+}
+
+/* Scrollbar Customization */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-teal);
+    outline: 1px solid var(--clr-teal);
+}
+
+/* Prevent Horizontal Scrolling */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure all elements stay within the viewport */
+.container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: var(--size-sm) var(--size-lg);
+    background-color: var(--clr-teal);
+    color: var(--clr-light);
+    border: none;
+    border-radius: var(--size-xs);
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+    margin-top: var(--size-sm);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+      0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+}
+
+.dashboard-item,
+.recommendation-card {
+    text-align: center; /* Center-align content within these divs */
+}
+
+.dashboard-item .btn,
+.recommendation-card .btn {
+    display: inline-block; /* Make buttons behave like inline elements */
+    margin-top: 10px; /* Add some space between the content and buttons */
+}
+
+#hero {
+    text-align: center; /* Center-align text and buttons */
+}
+
+#hero .btn {
+    display: inline-block; /* Make the button behave like an inline element */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: var(--clr-teal);
+    color: var(--clr-light);
+    border: none;
+    border-radius: var(--size-xs);
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block; /* Ensure it's displayed inline */
+    margin-top: var(--size-sm);
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+                0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+}
+/* Form Styles */
+form {
+    width: 100%;
+    max-width: 600px; /* Ensure the form doesn't get too wide */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 2rem;
+    background-color: var(--clr-slate800);
+    border-radius: var(--size-xs);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%; /* Make sure all form elements take the full width */
+    padding: var(--size-sm);
+    margin-bottom: 1rem; /* Space between form elements */
+    background-color: var(--clr-slate600);
+    color: var(--clr-light);
+    border: 1px solid var(--clr-slate400);
+    border-radius: var(--size-xs);
+    font-size: var(--size-base);
+    box-sizing: border-box; /* Ensure padding is inside the width */
+  }
+  
+  form input[type="submit"] {
+    width: 100%; /* Full width for submit button */
+    padding: var(--size-sm);
+    background-color: var(--clr-teal);
+    color: var(--clr-light);
+    border: none;
+    border-radius: var(--size-xs);
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Ensure padding is inside the width */
+  }
+  
+  form input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+                0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+  }
+  
+  form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form .form-group label {
+    font-size: var(--size-sm);
+    margin-bottom: var(--size-xxs);
+  }
+  
+  @media (max-width: 640px) {
+    form {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+  }
+  /* Adjust Input Fields Font Size */
+form input,
+form textarea,
+form select {
+  width: 100%; /* Ensure all form elements take the full width */
+  padding: var(--size-sm); /* Adjust padding to make input boxes more even */
+  margin-bottom: 1rem; /* Space between form elements */
+  background-color: var(--clr-slate600);
+  color: var(--clr-light);
+  border: 1px solid var(--clr-slate400);
+  border-radius: var(--size-xs);
+  font-size: var(--size-base); /* Ensure consistent font size for all inputs */
+  box-sizing: border-box; /* Ensure padding is inside the width */
+}
+
+/* Adjust the font size of the label to make it more balanced */
+form .form-group label {
+  font-size: var(--size-sm); /* Make label font smaller */
+  margin-bottom: var(--size-xxs); /* Add space between label and input */
+}

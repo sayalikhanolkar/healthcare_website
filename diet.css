@@ -1,0 +1,165 @@
+body{
+    background-color:  #0a3b4e;
+}
+p
+{
+    color: white;
+}
+#namehidden
+{
+    color: #0d6e81;
+}
+
+#navbar
+{
+    text-align: center;
+    background-color: #0d6e81;
+    height: 200px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    margin-top: 0;
+    color: #0d6e81;
+}
+#name
+{
+    color: white;
+    font-size: 2.5em;
+}
+#pages
+{
+    display: flexbox;
+}
+.page
+{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:hover
+{
+    color: rgb(184, 180, 180);
+}
+#intro
+{
+    display: flex;
+    margin: 90px;
+    gap: 100px;
+    line-height: 35px;
+
+}
+
+#intropara
+{
+    font-size: 1.5em;
+}
+#introimage
+{
+    height: 300px;
+    width: 400px;
+    float: right;
+    border-radius: 15px;
+}
+#bmicalc
+{
+    color: white;
+    text-align: center;
+    background-color: #198ca3;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    border-radius: 20px;
+    box-shadow:0 0 20px 10px #5bc6dc;
+}
+#submitbutton
+{
+    color: white;
+}
+#bmicalc h2 {
+    margin-top: 20px; /* Adds 20px of space above the h2 element */
+}
+#height
+{
+    font-size: 1.2em;
+}
+#age
+{
+    font-size: 1.2em;
+}
+#weight
+{
+    font-size: 1.2em;
+}
+.bmi
+{
+    font-size: 1.5em;
+}
+#submitbutton
+{
+    color: black;
+    font-size: 1.2em;
+}
+#result
+{
+    color: white;font-size: 1.2em;
+}
+/* Wrapper for All Diet Boxes */
+.diet-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.diet-box, .box {
+    background-color:#1e293b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+.section-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#dietplans
+{
+    text-align: center;
+    font-size: 3em;
+}
+

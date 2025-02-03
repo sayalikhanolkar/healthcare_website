@@ -1,0 +1,629 @@
+/* Root Variables */
+:root {
+  --clr-dark: #0a3b4e;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-teal: #0d6e81;
+  --clr-teal-light: #73c2c9;
+  --clr-teal-dark: #085c63;
+  --clr-indigo: #4f46e5;
+
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+/* General Styles */
+body {
+  font-family: 'General Sans', sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center; /* Center-align all text */
+}
+
+/* Navbar */
+#navbar {
+  text-align: center;
+  background-color: var(--clr-teal);
+  height: 200px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#pages {
+  display: flex;
+  gap: var(--size-lg);
+  margin-top: var(--size-sm);
+}
+
+.page {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.page:hover {
+  color: rgb(184, 180, 180);
+}
+
+/* Container Layout */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Q&A Section */
+#qa {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg);
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#question-form textarea {
+  width: 100%;
+  padding: var(--size-sm);
+  margin-bottom: var(--size-sm);
+  border-radius: var(--size-xs);
+  border: 1px solid var(--clr-slate600);
+  background-color: var(--clr-slate600);
+  color: var(--clr-light);
+}
+
+#question-form button {
+  padding: var(--size-sm) var(--size-lg);
+  background-color: var(--clr-teal);
+  color: var(--clr-light);
+  border: none;
+  border-radius: var(--size-xs);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#question-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+    0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+}
+
+#faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#faq-list li {
+  margin-bottom: var(--size-sm);
+}
+
+/* Daily Reminders */
+#reminders {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg);
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reminder {
+  margin-bottom: var(--size-sm);
+}
+
+#add-reminder {
+  padding: var(--size-sm) var(--size-lg);
+  background-color: var(--clr-teal);
+  color: var(--clr-light);
+  border: none;
+  border-radius: var(--size-xs);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#add-reminder:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+    0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+}
+
+/* Daily Reminders */
+#reminders {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg);
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left-align the entire reminders section */
+}
+
+.reminder {
+  margin-bottom: var(--size-sm);
+  display: flex;
+  align-items: center; /* Align checkbox and text vertically */
+}
+
+.reminder input[type="checkbox"] {
+  width: 24px; /* Increase checkbox size */
+  height: 24px; /* Increase checkbox size */
+  margin-right: var(--size-sm); /* Add spacing between checkbox and text */
+  cursor: pointer;
+  accent-color: var(--clr-teal); /* Change checkbox color */
+}
+
+.reminder label {
+  font-size: var(--size-lg); /* Increase label font size */
+  color: var(--clr-light);
+}
+
+/* Button for Adding Reminders */
+#add-reminder {
+  padding: var(--size-sm) var(--size-lg);
+  background-color: var(--clr-teal);
+  color: var(--clr-light);
+  border: none;
+  border-radius: var(--size-xs);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  margin-top: var(--size-sm);
+}
+
+#add-reminder:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(13, 110, 129, 0.25),
+    0 10px 10px rgba(13, 110, 129, 0.22), 0 0 120px -10px var(--clr-teal);
+}
+
+
+/* Small Articles */
+#articles {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg);
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-grid {
+  display: flex;
+  flex-direction: column; /* Stack articles vertically */
+  gap: var(--size-lg);
+}
+
+.article {
+  border: 1px solid var(--clr-slate600);
+  border-radius: var(--size-xs);
+  overflow: hidden;
+  background-color: var(--clr-slate600);
+}
+
+.article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.article h3 {
+  margin: var(--size-sm);
+  font-size: var(--size-lg);
+  color: var(--clr-light);
+}
+
+.article p {
+  margin: var(--size-sm);
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: var(--size-sm);
+  background-color: var(--clr-teal);
+  color: var(--clr-light);
+  margin-top: var(--size-lg);
+}
+
+/* Scrollbar Customization */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-teal);
+  outline: 1px solid var(--clr-teal);
+}
+/* Prevent Horizontal Scrolling */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all elements stay within the viewport */
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+/* Navbar */
+#navbar {
+  text-align: center;
+  background-color: var(--clr-teal);
+  height: 200px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Articles */
+.article-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-lg);
+  width: 100%; /* Ensure articles don't overflow */
+}
+/* Article Container */
+.article {
+  background-color: var(--clr-slate600); /* Light grey background */
+  border-radius: 25px; /* Rounded corners */
+  overflow: hidden; /* Ensures the image respects the border radius */
+  width: 50%; /* Adjust as needed */
+  margin: 0 auto; /* Center the article container */
+  padding: 0; /* Remove padding to reduce gap */
+}
+
+
+
+/* Images */
+img {
+  max-width: 100%; /* Ensure images don't overflow */
+  height: auto;
+}
+/* .article img {
+  
+} */
+
+.article:hover img {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+
+/* Small Articles */
+#articles {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg);
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: var(--size-lg); /* Space between articles */
+}
+
+.article {
+  border: 1px solid var(--clr-slate600);
+  border-radius: var(--size-xs);
+  overflow: hidden;
+  background-color: var(--clr-slate600);
+  width: 100%; /* Full width of the grid cell */
+}
+
+.article img {
+  width: 100%; /* Full width of the article container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px; /* Rounded corners at the top */
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0; /* Remove margin to reduce gap */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease-in-out;
+}
+.article h3 {
+  margin: var(--size-sm);
+  font-size: var(--size-lg);
+  color: var(--clr-light);
+}
+
+.article p {
+  margin: var(--size-sm);
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+}
+
+/* FAQ Section */
+#faq {
+  margin-top: var(--size-lg);
+  text-align: left; /* Left-align all FAQ content */
+}
+
+.faq-item {
+  margin-bottom: var(--size-sm);
+  border: 1px solid var(--clr-slate600);
+  border-radius: var(--size-xs);
+  background-color: var(--clr-slate800);
+  padding: var(--size-sm);
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  font-weight: 600;
+  color: var(--clr-);
+  font-size: var(--size-lg);
+  text-align: left; /* Left-align the questions */
+}
+
+details p {
+  margin-top: var(--size-sm);
+  color: var(--clr-slate400);
+  font-size: var(--size-base);
+  text-align: left; /* Left-align the answers */
+}
+
+/* Secondary Navbar */
+#secondary-navbar {
+  background-color: var(--clr-teal-dark);
+  padding: var(--size-sm) 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+#secondary-navbar .nav-link {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-size: var(--size-lg);
+  margin: 0 var(--size-lg);
+  padding: var(--size-xs) var(--size-sm);
+  border-radius: var(--size-xs);
+  transition: background-color 0.3s ease;
+}
+
+#secondary-navbar .nav-link:hover {
+  background-color: var(--clr-teal);
+}
+/* Daily Reminders */
+#reminders {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg) auto; /* Center the section */
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Limit width for better readability */
+  text-align: left; /* Left-align text */
+}
+
+#reminder-list {
+  margin: 0 auto; /* Center the list */
+  max-width: 600px; /* Limit width for better readability */
+}
+/* Decorative Icons for Daily Reminders */
+#reminders {
+  position: relative;
+}
+
+#reminders::before,
+#reminders::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Make icons subtle */
+}
+
+#reminders::before {
+  left: -120px; /* Position on the left */
+  background-image: url('assets/images/left-icon.png'); /* Add your image */
+}
+
+#reminders::after {
+  right: -120px; /* Position on the right */
+  background-image: url('assets/images/right-icon.png'); /* Add your image */
+}
+/* Background Animation */
+#reminders {
+  background: linear-gradient(135deg, var(--clr-slate800), var(--clr-slate600));
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#reminders::before {
+  background-image: url('assets/images/left-image.png');
+}
+
+#reminders::after {
+  background-image: url('assets/images/right-image.png');
+}
+
+/* FAQs Section */
+#qa {
+  padding: var(--size-lg);
+  background-color: var(--clr-slate800);
+  margin: var(--size-lg) auto; /* Center the section */
+  border-radius: var(--size-xs);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Limit width for better readability */
+  text-align: left; /* Left-align text */
+  position: relative; /* For decorative elements */
+}
+
+#faq {
+  margin: 0 auto; /* Center the FAQ content */
+  max-width: 600px; /* Limit width for better readability */
+}
+
+/* Decorative Icons for FAQs */
+#qa::before,
+#qa::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Make icons subtle */
+}
+
+#qa::before {
+  left: -120px; /* Position on the left */
+  background-image: url('assets/images/left-icon.png'); /* Add your image */
+}
+
+#qa::after {
+  right: -120px; /* Position on the right */
+  background-image: url('assets/images/right-icon.png'); /* Add your image */
+}
+
+/* FAQ Item Animation */
+.faq-item {
+  margin-bottom: var(--size-sm);
+  border: 1px solid var(--clr-slate600);
+  border-radius: var(--size-xs);
+  background-color: var(--clr-slate800);
+  padding: var(--size-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+/* Background Animation */
+#qa {
+  background: linear-gradient(135deg, var(--clr-slate800), var(--clr-slate600));
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Article Links */
+.article-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  display: block; /* Make the entire article clickable */
+
+}
+
+.article-link:hover .article {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.article {
+  border: 1px solid var(--clr-slate600);
+  border-radius: var(--size-xs);
+  overflow: hidden;
+  background-color: var(--clr-slate600);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
